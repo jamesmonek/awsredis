@@ -1,25 +1,25 @@
-yum remove httpd* php* -y
-yum clean all -y
-yum upgrade -y
-which amazon-linux-extras
-yum install -y httpd 
-yum install -y httpd-tools mod_ssl
-mv /etc/localtime /etc/localtime.bak
-ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
-amazon-linux-extras enable php7.3
-yum install -y php
-yum install -y php-xml php-pdo php-mysqlnd php-gd php-mbstring php-mcrypt php-mysqlnd php-opcache
-yum install -y php-pecl-imagick
-yum install -y php-fpm
-yum install -y mysql
-amazon-linux-extras install redis4.0
-systemctl enable redis
-systemctl start redis
-yum install -y php-pecl-redis
-yum install -y php-pear php-devel
-systemctl enable httpd
-systemctl start httpd
-systemctl enable php-fpm
-systemctl start php-fpm
-systemctl enable redis
-systemctl start redis
+sudo yum remove httpd* php* -y
+sudo yum clean all -y
+sudo yum upgrade -y
+sudo which amazon-linux-extras
+sudo yum install -y httpd 
+sudo yum install -y httpd-tools mod_ssl
+sudo mv /etc/localtime /etc/localtime.bak
+sudo ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+sudo amazon-linux-extras enable php7.3
+sudo yum install -y php
+sudo yum install -y php-xml php-pdo php-mysqlnd php-gd php-mbstring php-mcrypt php-mysqlnd php-opcache
+sudo yum install -y php-pecl-imagick
+sudo yum install -y php-fpm
+sudo yum install -y mysql
+sudo amazon-linux-extras install redis4.0
+sudo systemctl enable redis
+sudo systemctl start redis
+sudo yum install -y php-pecl-redis
+sudo yum install -y php-pear php-devel
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo systemctl enable php-fpm
+sudo systemctl start php-fpm
+sudo systemctl enable redis
+sudo systemctl start redis
