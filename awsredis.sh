@@ -25,3 +25,6 @@ sudo systemctl enable php-fpm
 sudo systemctl start php-fpm
 sudo systemctl enable redis
 sudo systemctl start redis
+sudo amazon-linux-extras install -y epel
+sudo yum -y update
+sudo yum install -y fail2ban
