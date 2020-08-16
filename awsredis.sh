@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 sudo yum remove httpd* php* -y
 sudo yum clean all -y
 sudo yum upgrade -y
