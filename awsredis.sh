@@ -14,7 +14,7 @@ sudo yum install -y php-xml php-pdo php-mysqlnd php-gd php-mbstring php-mcrypt p
 sudo yum install -y php-pecl-imagick
 sudo yum install -y php-fpm
 sudo yum install -y mysql
-sudo amazon-linux-extras install redis4.0
+sudo amazon-linux-extras install -y redis4.0
 sudo systemctl enable redis
 sudo systemctl start redis
 sudo yum install -y php-pecl-redis
